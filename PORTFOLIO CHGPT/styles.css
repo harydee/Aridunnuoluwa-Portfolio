@@ -340,7 +340,75 @@ footer {
 .project-link:hover {
     color: #93c5fd;
 }
+/* ===== ABOUT ===== */
 
+.section-heading {
+    margin-bottom: 40px;
+}
+
+.section-heading span {
+    color: #60a5fa;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.section-heading h2 {
+    margin-top: 8px;
+    margin-bottom: 0;
+    color: white;
+    font-size: 36px;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-text p {
+    color: #94a3b8;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.about-card {
+    background: #111827;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+
+    padding: 25px 20px;
+
+    transition: 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-6px);
+    border-color: #2563eb;
+}
+
+.about-icon {
+    font-size: 28px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.about-card h3 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.about-card p {
+    color: #94a3b8;
+    font-size: 14px;
+}
 /* ===== MOBILE ===== */
 
 @media (max-width: 700px) {
@@ -368,5 +436,12 @@ footer {
     section {
         padding: 60px 6%;
     }
+.about-container {
+    grid-template-columns: 1fr;
+}
+
+.about-cards {
+    grid-template-columns: 1fr;
+}
 
 }
